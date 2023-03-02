@@ -1,0 +1,67 @@
+.container
+{
+    width: inherit;
+    height: 1000px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background-color: beige;
+}
+
+.score_show
+{
+    width: inherit;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.batsman_show
+{
+    width: inherit;
+    height: 100px;
+    display: flex;
+    background-color: aqua;
+}
+
+.player_1, .player_2
+{
+    width: 50%;
+    height: inherit;
+
+}
+
+.ball_detail
+{
+  width: inherit;
+  height: 100px;
+  display: flex;
+  flex-direction: row ;
+}
+.ball_1 ,.ball_2,.ball_3,.ball_4,.ball_5,.ball_6
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: azure;
+}
+.score_store
+{
+    width: inherit;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button_display
+{
+    width: 25%;
+    height:80px;
+    border: none;
+}
+
+.show_baller
+{
+    width: inherit;
+    height: 100px;
+    background-color: darkgray;
+}

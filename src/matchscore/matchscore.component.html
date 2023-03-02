@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="score_show">
+    <button  (click)="showdata()">Hey</button>
+    </div>
+    <h4> Select Batsman </h4>
+    <div class="batsman_show">
+    <div class="player_1">
+        <select class="form-select" aria-label="Default select example" (change)="on_Strike_player1($event)">
+            <option selected>Open this select menu</option>
+            <option [value]="name.player_id" *ngFor=" let name of player_list,let i =index">{{name.player_name}}</option>
+            
+          </select>
+    </div>
+    <div class="player_2">
+        <select class="form-select" aria-label="Default select example" (change)="on_Strike_player2($event)">
+            <option selected>Open this select menu</option>
+            <option [value]="name.player_id" *ngFor=" let name of player_list, let i =index">{{name.player_name}}</option>
+          </select>
+    </div>
+</div>
+    <div class="show_baller">
+        <select class="form-select" aria-label="Default select example" (change)="on_Strike_bowler($event)">
+            <option selected>Open this select menu</option>
+            <option [value]="name.player_id" *ngFor=" let name of bowler_list,let i =index">{{name.player_name}}</option>
+            
+          </select>
+    </div>
+    <div class="ball_detail">
+    <div class="ball_1"></div>
+    <div class="ball_2"></div>
+    <div class="ball_3"></div>
+    <div class="ball_4"></div>
+    <div class="ball_5"></div>
+    <div class="ball_6"></div>
+    </div>
+    <div class="score_store">
+     <button class="button_display" value="0" (click)="sendScore($event)">0</button>
+     <button class="button_display" value="1" (click)="sendScore($event)">1</button>
+     <button class="button_display" value="2" (click)="sendScore($event)">2</button>
+     <button class="button_display" value="undo" (click)="undoScore()">undo</button>
+     <button class="button_display" value="3" (click)="sendScore($event)">3</button>
+     <button class="button_display" value="4" (click)="sendScore($event)">4</button>
+     <button class="button_display" value="6" (click)="sendScore($event)">6</button>
+     <button class="button_display" value="OUT" >OUT</button>
+     <button class="button_display" value="WD" (click)="wideBall()">WD</button>
+     <button class="button_display" value="NB" (click)="noBall()">NB</button>
+     <button class="button_display" >Bye</button>
+     <button class="button_display" >LBW</button>
+    </div>
+</div>
