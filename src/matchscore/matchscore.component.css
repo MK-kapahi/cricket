@@ -21,8 +21,13 @@
     height: 100px;
     display: flex;
     background-color: aqua;
+    flex-direction: column;
 }
 
+.display_comp
+{
+    display: flex;
+}
 .player_1, .player_2
 {
     width: 50%;
@@ -64,4 +69,48 @@
     width: inherit;
     height: 100px;
     background-color: darkgray;
+    
+}
+
+.ball_1
+{
+    background-image: url(../assets/1img.png);
+    background-size: contain;
+}
+
+
+.ball_2
+{
+    background-image: url(../assets/2.png);
+    background-size: cover;
+}
+
+.ball_3
+{
+    background-image: url(../assets/3.png);
+    background-size: contain;
+}
+
+.ball_4
+{
+    background-image: url(../assets/4.png);
+    background-size:contain;
+}
+
+.ball_5
+{
+    background-image: url(../assets/5.png);
+    background-size:cover;
+}
+
+.ball_6
+{
+    background-image: url(../assets/6img.png);
+    background-size: contain;
+}
+
+.display_player
+{
+    display: flex;
+    justify-content: space-around;
 }

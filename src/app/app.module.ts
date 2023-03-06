@@ -6,10 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http'
 import { PlayerService } from './Service/player.service';
+import { DemoComp } from './democomp/democomp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DemoComp
+    
   ],
   imports: [
     BrowserModule,

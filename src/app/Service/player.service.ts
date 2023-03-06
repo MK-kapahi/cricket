@@ -11,8 +11,10 @@ export class PlayerService
 
     url = 'http://192.180.2.135:8000/matches/fetch';
 
+    urlFirebarse = "https://cricket-a47f7-default-rtdb.firebaseio.com/matches.json";
+
     getTeamPlayer()
     {
-      return this.client.get(this.url); 
+      return this.client.get(this.urlFirebarse); 
      }
   }
